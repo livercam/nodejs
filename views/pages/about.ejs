@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <title>About Page</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>O Time!</h1>
+        <div class="row">
+            <% for (usuario of usuarios){%>
+                <div class="col-sm-4">
+                    <h2><%= usuario.name %></h2>
+                    <img class="img-responsive" style="height: 250px" src="<%= usuario.avatar %>">
+                </div>
+                <% } %>
+        </div>
+    </div>
+    
+</body>
+
+</html>
